@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Página Principal</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" />
+  <style>
+    body { background-color: #9cd6e2; margin: 0; }
+    header {
+      background-color: #fcd12a;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo { height: 50px; }
+    .icon-btn {
+      background: none;
+      border: none;
+      color: #ec1d6f;
+      font-size: 24px;
+      margin-left: 10px;
+    }
+    .carousel-item img {
+      height: 350px;
+      object-fit: cover;
+      width: 100%;
+      border-radius: 10px;
+    }
+    .nav-btn {
+      background-color: #ec1d6f;
+      color: white;
+      border-radius: 25px;
+      padding: 15px;
+      font-weight: bold;
+      text-align: center;
+      display: block;
+      text-decoration: none;
+      margin: 10px auto;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="images/logopanda.png" alt="Logo Panda" class="logo" />
+  <div>
+    <button class="icon-btn"><i class="bi bi-search"></i></button>
+    <button class="icon-btn"><i class="bi bi-bell"></i></button>
+    <button class="icon-btn"><i class="bi bi-list"></i></button>
+  </div>
+</header>
+
+<div id="carouselPanda" class="carousel slide mt-2" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/Premium PSD _ Green healthy food menu promotion social media instagram post banner template.jpeg" alt="Banner 1" class="d-block w-100" />
+    </div>
+    <div class="carousel-item">
+      <img src="images/vanilla panda.webp" alt="Banner 2" class="d-block w-100" />
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselPanda" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon bg-dark rounded-circle"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselPanda" data-bs-slide="next">
+    <span class="carousel-control-next-icon bg-dark rounded-circle"></span>
+  </button>
+</div>
+
+<!-- BOTONES RESPONSIVOS -->
+<div class="container text-center mt-4">
+  <div class="row">
+    <div class="col-12 col-sm-6 col-lg-3">
+      <a href="productos.html" class="nav-btn">PRODUCTOS</a>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+      <a href="sucursales.html" class="nav-btn">SUCURSALES</a>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+      <a href="nosotros.html" class="nav-btn">NOSOTROS</a>
+    </div>
+    <div class="col-12 col-sm-6 col-lg-3">
+      <a href="contacto.html" class="nav-btn">CONTACTANOS</a>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
